@@ -14,7 +14,7 @@ def play():
             print("You have failed to provide a correct option to play. Goodbye :(")
             sys.exit(0)
 
-        user = str(input("\nSelect any one; 'r' for rock 'p' for paper 's' for scissors\n"))
+        user = str.lower(input("\nSelect any one; 'r' for rock 'p' for paper 's' for scissors\n"))
         if user.lower() not in moves:
             print("Invalid Option!")
             attempts -= 1
